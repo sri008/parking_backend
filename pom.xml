@@ -75,13 +75,13 @@
 			<version>7.41.2</version>
 		</dependency>
 	</dependencies>
-	<!-- <distributionManagement>
+	<distributionManagement>
 	    <snapshotRepository>
 		<id>snapshots</id>
-		<name>1f9e87d08392-snapshots</name>
-		<url>http://172.31.9.173:8081/artifactory/libs-snapshot-local</url>
+		<name>de959bc55313-snapshots</name>
+                <url>http://35.154.185.126:8081/artifactory/libs-snapshot-local</url>
 	    </snapshotRepository>
-	</distributionManagement> -->
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
