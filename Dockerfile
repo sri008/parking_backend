@@ -1,3 +1,5 @@
-FROM anjuna91/jenkins-docker:v1
-MAINTAINER Anjuna
+FROM deepakaiden/jenkins
+
+MAINTAINER salagars
+
 RUN java -jar $WORKSPACE/target/*.jar &
