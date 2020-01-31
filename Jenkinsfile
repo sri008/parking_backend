@@ -3,7 +3,7 @@ pipeline {
 	stages {
       stage('Git Checkout') {
          steps {
-            git 'https://github.com/Anjuna661/parking_backend.git'
+            git 'https://github.com/salagarsprabu/parking_backend.git'
 		}
 	}
 	stage('Build') {
@@ -15,7 +15,7 @@ pipeline {
 	}
 	stage("Quality Gate") {
             steps {
-              timeout(time: 5, unit: 'MINUTES') {
+              timeout(time: 2, unit: 'MINUTES') {
                 waitForQualityGate abortPipeline: true
               }
             }
