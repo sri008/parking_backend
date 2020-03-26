@@ -118,7 +118,7 @@
 			    <version>6.3.2</version>
 			    <configuration>
 			       <url>jdbc:mysql://localhost:3306/testdb</url>
-			       <user>root</user>
+			       <user>flyuser1</user>
 			    </configuration>
 			    <dependencies>
 			       <dependency>
