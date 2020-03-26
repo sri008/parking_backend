@@ -112,6 +112,23 @@
 			    <artifactId>sonar-maven-plugin</artifactId>
 			    <version>3.7.0</version>
 			</plugin>
+			<plugin>
+			    <groupId>org.flywaydb</groupId>
+        		    <artifactId>flyway-maven-plugin</artifactId>
+			    <version>6.3.2</version>
+			    <configuration>
+			       <url>jdbc:mysql://localhost:3306/testdb</url>
+			       <user>root</user>
+			    </configuration>
+			    <dependencies>
+			       <dependency>
+			          <groupId>mysql</groupId>
+			          <artifactId>mysql-connector-java</artifactId>
+			          <version>5.1.13</version>
+			          <scope>runtime</scope>
+			       </dependency>
+			   </dependencies>
+			 </plugin>
 		</plugins>
 	</build>
 </project>
